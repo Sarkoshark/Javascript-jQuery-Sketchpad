@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>jQuery/Javascript Sketchpad</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/smoothness/jquery-ui.css"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+
+	<div id="left">
+		<div id="info">
+			<h3>Colors</h3>
+				<div id="c_container">
+					<div id="blue" class="colors"></div>
+					<div id="yellow" class="colors"></div>
+					<div id="red" class="colors"></div>
+					<div id="green" class="colors"></div>
+					<div id="orange" class="colors"></div>
+					<div id="white" class="colors"></div>
+				</div>
+			<h3>Options</h3>
+			<div>
+				<p id="note">Minimum of 2 : Max of 20</p>
+				Grid Size: <input id="gsize" type="number" name="gridsize" value="5" min="2" max="20"/><button name="refresh" id="refresh" onclick="poop=$('#gsize').val();">Refresh</button>
+				<button name="reset" id="reset">Reset</button>
+				<hr />
+				<p id="note">Hover Option: <input id="hovereffect" type="checkbox" name="hover_option" value="off" onchange="hoveroption()" /></p>
+			</div>
+		</div>
+	</div>
+	<center>
+	<table>
+		<tr>
+			<td>
+				<caption>Grid</caption>
+			</td>
+			<td>
+				<div id="gridhere"></div>
+			</td>
+		</tr>
+	</table>
+	</center>
+
+</div>
+
+<footer>
+	
+Copyright Sarkoshark &#169 2015 - A Project done for ( <a href="http://www.theodinproject.com/">http://www.theodinproject.com/</a> )
+
+</footer>
+
+</body>
+
+</html>
